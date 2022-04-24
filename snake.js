@@ -1,5 +1,5 @@
 import { getInputDirection } from "./input.js"
-export  const SNAKE_SPEED = 5
+export  const SNAKE_SPEED = 7
 const snakeBody = [{x:11,y:11}]
 let newSegments = 0
 export function update(){
@@ -10,7 +10,6 @@ export function update(){
   }
   snakeBody[0].x += inputDirection.x
   snakeBody[0].y += inputDirection.y
-console.log('snake update')
 }
 export function draw(gameBoard){
   snakeBody.forEach(segment =>{
